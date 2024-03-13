@@ -4,6 +4,8 @@ int main(void) {
 
 	const int worth = 100; //const 关键字定义常量；
 
+	constexpr int worth0 = 200; //这是顶层const
+
 	int sunflowers = 500;
 
 	double rose = 4.99;
