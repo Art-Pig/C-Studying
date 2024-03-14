@@ -78,6 +78,48 @@ int main() {
 总之，`std::vector` 是 C++ 中一个非常有用的容器，能够动态地管理一组数据，并提供了许多方便的操作函数。
  
 
- 
+ 在C++中，`decltype` 是一种用来获取表达式的类型的关键字。它允许您在编译时检索表达式的类型，而无需实际执行该表达式。`decltype` 在模板编程、泛型编程和元编程等场景中非常有用，因为它可以使代码更加灵活和通用。
+
+下面是 `decltype` 的基本用法：
+
+```cpp
+decltype(expression)
+```
+
+其中 `expression` 是要获取类型的表达式。例如：
+
+```cpp
+int x = 5;
+decltype(x) y; // y的类型为int，因为x是int类型的变量
+```
+
+`decltype` 也可以用于函数返回类型推断：
+
+```cpp
+int foo();
+float bar();
+
+decltype(foo()) result; // result的类型将是foo函数返回值的类型，即int
+decltype(bar()) result2; // result2的类型将是bar函数返回值的类型，即float
+```
+
+`decltype` 还可以与其他表达式一起使用，例如函数调用、运算符表达式等：
+
+```cpp
+int a = 5;
+decltype(a + 3) b; // b的类型为int，因为a + 3的结果是int类型
+```
+
+需要注意的是，`decltype` 不会执行表达式，它只会根据表达式的类型进行推导。因此，它特别适用于泛型编程和模板元编程，因为这些场景中的类型通常是在编译时确定的。
+
+另外，`decltype` 还可以与 `auto` 关键字结合使用，用于推断变量的类型：
+
+```cpp
+int a = 5;
+auto b = a; // b的类型为int，auto会根据表达式推断出变量的类型
+decltype(a) c = a; // c的类型为int，decltype会直接获取a的类型
+```
+
+总的来说，`decltype` 提供了一种强大的方法来检索表达式的类型，使得代码更具灵活性和通用性。
 
  
