@@ -16,13 +16,18 @@ int main(void){
 
     arr.push_back(i);
     
-      i++;
+    /*i++;
     
-    sum += arr[i];   //将每一个数组元素相加
+    sum += arr[i];   //将每一个数组元素相加，这里顺序写错了，
+    这样子的话，下一个索引是没有元素的，注意顺序*/
+    
+    sum += arr[i];
+
+    i++;
     
   }
 
-  std::cout>>"The sum of arr is ">>sum>>".">>std::endl; //打印出数组和
+  std::cout<<"The sum of arr is "<<sum>>"."<<std::endl; //打印出数组和
 
   return 0;
   
