@@ -2,7 +2,7 @@ C++ Studying
 
 I was introduce my condition that I used to study C.So, I will writting some difference of C and C++.
 
-If you can read my note and I will so honest.
+If you will read my note and will so honor.
 
  对于C++ 而言，变量的声明与赋值有着很大的不同
 
