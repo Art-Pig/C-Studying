@@ -122,4 +122,20 @@ decltype(a) c = a; // c的类型为int，decltype会直接获取a的类型
 
 总的来说，`decltype` 提供了一种强大的方法来检索表达式的类型，使得代码更具灵活性和通用性。
 
+数组是相同类型元素的集合，相反，struct是任意类型元素的集合，
+
+struct mess{
+
+ int flowers;
+
+ const float price;
+
+ int *ptr;
+ 
+};
+
+
+
+
+
  
