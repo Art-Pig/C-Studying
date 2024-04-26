@@ -6,11 +6,11 @@
 
 */
 
-#include <iostream>
+#include <iostream>	//标准库
 
-#include <string>
+#include <string>	//字符串用库
 
-using namespace std;
+using namespace std;	//使用字符串标准库
 
 struct hero { //英雄的构造体，包含姓名、年龄和性别
 
